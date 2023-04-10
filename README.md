@@ -1,5 +1,5 @@
 # Bulma Light
-**Note:** This project is still in early development and isn't ready to be used. Also some components such as the navbar are currently missing.
+**Note:** This project is still in early development and isn't ready to be used.
 
 ## What is this?
 This fork of Bulma is intended to fix some issues I've had in the past.
