@@ -2,9 +2,11 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 @import "sass/utilities/_all"
 @import "sass/base/_all"
-@import "sass/elements/_all"
-@import "sass/form/_all"
-@import "sass/components/_all"
-@import "sass/grid/_all"
-@import "sass/helpers/_all"
-@import "sass/layout/_all"
+@import "sass/elements/_all" // 66kb -> 12kb
+@import "sass/form/_all" // 33kb
+@import "sass/components/_all" // 57kb
+// @import "sass/grid/_all" // 36kb
+@import "sass/helpers/_all" // 33kb
+@import "sass/layout/_all" // 21kb
+
+// 245kb. goal ~100kb while also adding CSS Grid and large footer

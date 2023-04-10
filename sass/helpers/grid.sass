@@ -1,0 +1,41 @@
+@import "../utilities/initial-variables"
+
+%css-grid, .css-grid 
+    display: grid
+    gap: $gap
+
+    // prevent empty space (may reorder items):
+    &.fit-dense
+        grid-auto-flow: dense
+    &.fit-row-dense
+        grid-auto-flow: dense
+    &.fit-column-dense
+        grid-auto-flow: dense
+
+.two-column-grid
+    @extend %css-grid
+    grid-template-columns: 1fr
+    @media (min-width: $tablet)
+        grid-template-columns: repeat(2, 1fr)
+
+.three-column-grid
+    @extend %css-grid
+    grid-template-columns: 1fr
+    @media (min-width: $desktop)
+        grid-template-columns: repeat(3, 1fr)
+
+.four-column-grid
+    @extend %css-grid
+    grid-template-columns: 1fr
+    @media (min-width: $tablet)
+        grid-template-columns: repeat(2, 1fr)
+    @media (min-width: $desktop)
+        grid-template-columns: repeat(4, 1fr)
+
+.six-column-grid
+    @extend %css-grid
+    grid-template-columns: repeat(2, 1fr)
+    @media (min-width: $tablet)
+        grid-template-columns: repeat(3, 1fr)
+    @media (min-width: 1225px)
+        grid-template-columns: repeat(6, 1fr)
